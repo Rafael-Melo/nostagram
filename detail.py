@@ -5,7 +5,7 @@ num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 legenda = {'0': 'Reencontrando o Time Avatar para inauguração da Cidade República 📌🏛', '1': 'Eu 😁', '2': 'Novos amigos!!', '3':'Appa', '4':'Ele vai chamar Momo 🙊', '5':'Shopping!!', '6':'War is coming', '7':'A maior dobradora de terra do mundo, Toph!', '8':'Quem diria que seu maior inimigo poderia se tornar seu melhor amigo', '9':'iroh é uma das pessoas mais sábeis e gentis que já conheci', '10':'Nós', '11':'Sempre há escolhas'}
 
 def detail_view(page: ft.Page):
-    page.bgcolor = ft.colors.BLACK
+    page.bgcolor = ft.Colors.BLACK
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
 
@@ -24,7 +24,7 @@ def detail_view(page: ft.Page):
             spacing=0,
             controls=[
                 ft.ListTile(
-                    title=ft.Text(value='Avatar', color=ft.colors.BLACK, weight=ft.FontWeight.BOLD),
+                    title=ft.Text(value='Avatar', color=ft.Colors.BLACK, weight=ft.FontWeight.BOLD),
                     subtitle=ft.Text(value=f'{local[img_id]}', color=ft.Colors.BLACK),
                     leading=ft.Image(
                         src='images/Avatar.png',
@@ -107,7 +107,7 @@ def detail_view(page: ft.Page):
                             ),
                             ft.Text(
                                 value='1023 ANOS ATRÁS',
-                                color=ft.colors.GREY,
+                                color=ft.Colors.GREY,
                                 size=14,
                                 offset=ft.Offset(x=0, y=-0.5),
                             ),
@@ -137,7 +137,7 @@ def detail_view(page: ft.Page):
                             ),
                             ft.Text(
                                 value='Ver todos os 3627 comentários',
-                                color=ft.colors.GREY,
+                                color=ft.Colors.GREY,
                                 size=16,
                             ),
                             ft.TextField(

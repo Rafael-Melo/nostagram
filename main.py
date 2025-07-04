@@ -1,15 +1,15 @@
 import flet as ft
 
 def main_view(page: ft.Page):
-    page.bgcolor = ft.colors.BLACK
+    page.bgcolor = ft.Colors.BLACK
     page.scroll = ft.ScrollMode.HIDDEN
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     page.window_title_bar_hidden = True
 
     def follow(e):
         e.control.content.value = 'Seguindo'
-        e.control.content.color = ft.colors.BLACK
-        e.control.bgcolor = ft.colors.GREY_300
+        e.control.content.color = ft.Colors.BLACK
+        e.control.bgcolor = ft.Colors.GREY_300
         e.control.update()
 
     def show_image_detail(e):
@@ -25,7 +25,7 @@ def main_view(page: ft.Page):
                 ft.Container(
                     col={'xs':12, 'sm':4},
                     padding=40,
-                    bgcolor=ft.colors.BLACK,
+                    bgcolor=ft.Colors.BLACK,
                     shape=ft.BoxShape.CIRCLE,
                     shadow=ft.BoxShadow(blur_radius=10, color=ft.Colors.LIGHT_BLUE),
                     height=200,
@@ -45,28 +45,28 @@ def main_view(page: ft.Page):
                                 controls=[
                                     ft.Text(
                                         value='avatardeveloper',
-                                        color=ft.colors.BLUE,
+                                        color=ft.Colors.BLUE,
                                         size=24,
                                     ),
                                     ft.Icon(
-                                        name=ft.icons.VERIFIED,
-                                        color=ft.colors.BLUE_500,
+                                        name=ft.Icons.VERIFIED,
+                                        color=ft.Colors.BLUE_500,
                                         size=20,
                                     )
                                 ]
                             ),
                             ft.Icon(
                                 col=1,
-                                name=ft.icons.MORE_HORIZ,
-                                color=ft.colors.WHITE,
+                                name=ft.Icons.MORE_HORIZ,
+                                color=ft.Colors.WHITE,
                             ),
                             ft.Container(
                                 col=4,
-                                bgcolor=ft.colors.BLUE_500,
+                                bgcolor=ft.Colors.BLUE_500,
                                 content=ft.Text(
                                     value='Seguir',
                                     weight=ft.FontWeight.BOLD,
-                                    color=ft.colors.WHITE,
+                                    color=ft.Colors.WHITE,
                                 ),
                                 border_radius=ft.border_radius.all(10),
                                 padding=ft.padding.symmetric(
@@ -78,11 +78,11 @@ def main_view(page: ft.Page):
                             ),
                             ft.Container(
                                 col=6,
-                                bgcolor=ft.colors.GREY_300,
+                                bgcolor=ft.Colors.GREY_300,
                                 content=ft.Text(
                                     value='Enviar Mensagem',
                                     weight=ft.FontWeight.BOLD,
-                                    color=ft.colors.BLACK,
+                                    color=ft.Colors.BLACK,
                                     max_lines=1,
                                     overflow=ft.TextOverflow.ELLIPSIS,
                                 ),
@@ -99,14 +99,14 @@ def main_view(page: ft.Page):
                                     ft.TextSpan(
                                         text='139 ',
                                         style=ft.TextStyle(
-                                            color=ft.colors.WHITE,
+                                            color=ft.Colors.WHITE,
                                             weight=ft.FontWeight.BOLD,
                                         )
                                     ),
                                     ft.TextSpan(
                                         text='publicações',
                                         style=ft.TextStyle(
-                                            color=ft.colors.WHITE,
+                                            color=ft.Colors.WHITE,
                                         )
                                     ),
                                 ]
@@ -117,14 +117,14 @@ def main_view(page: ft.Page):
                                     ft.TextSpan(
                                         text='100 mil ',
                                         style=ft.TextStyle(
-                                            color=ft.colors.WHITE,
+                                            color=ft.Colors.WHITE,
                                             weight=ft.FontWeight.BOLD,
                                         )
                                     ),
                                     ft.TextSpan(
                                         text='seguidores',
                                         style=ft.TextStyle(
-                                            color=ft.colors.WHITE,
+                                            color=ft.Colors.WHITE,
                                         )
                                     ),
                                 ]
@@ -135,14 +135,14 @@ def main_view(page: ft.Page):
                                     ft.TextSpan(
                                         text='133 ',
                                         style=ft.TextStyle(
-                                            color=ft.colors.WHITE,
+                                            color=ft.Colors.WHITE,
                                             weight=ft.FontWeight.BOLD,
                                         )
                                     ),
                                     ft.TextSpan(
                                         text='seguindo',
                                         style=ft.TextStyle(
-                                            color=ft.colors.WHITE,
+                                            color=ft.Colors.WHITE,
                                         )
                                     ),
                                 ]
@@ -150,12 +150,12 @@ def main_view(page: ft.Page):
                             ft.Text(
                                 col=12,
                                 value='Avatar Developer',
-                                color=ft.colors.WHITE,
+                                color=ft.Colors.WHITE,
                                 weight=ft.FontWeight.BOLD,
                             ),
                             ft.Text(
                                 col=12,
-                                color=ft.colors.WHITE,
+                                color=ft.Colors.WHITE,
                                 spans=[
                                     ft.TextSpan(text='Teaching programming from the ground up! 🤯\n'),
                                     ft.TextSpan(text='Follow on YouTube: Avatar Developer ▶️\n'),
@@ -164,7 +164,7 @@ def main_view(page: ft.Page):
                                         text='🔗 linktr.ee/avatardeveloper',
                                         url='https://linktr.ee/avatardeveloper',
                                         style=ft.TextStyle(
-                                            color=ft.colors.BLUE,
+                                            color=ft.Colors.BLUE,
                                         )
                                         ),
                                 ]
@@ -174,20 +174,20 @@ def main_view(page: ft.Page):
                                     ft.TextSpan(
                                         text='Seguido por ',
                                         style=ft.TextStyle(
-                                            color=ft.colors.GREY_700,
+                                            color=ft.Colors.GREY_700,
                                         )
                                     ),
                                     ft.TextSpan(
                                         text='você ',
                                         style=ft.TextStyle(
-                                            color=ft.colors.GREY,
+                                            color=ft.Colors.GREY,
                                             weight=ft.FontWeight.BOLD,
                                         )
                                     ),
                                     ft.TextSpan(
                                         text='e outras 100 pessoas',
                                         style=ft.TextStyle(
-                                            color=ft.colors.GREY_700,
+                                            color=ft.Colors.GREY_700,
                                         ),
                                     ),
                                 ],
@@ -234,24 +234,24 @@ def main_view(page: ft.Page):
     posts = ft.Tabs(
         selected_index=1,
         animation_duration=300,
-        label_color=ft.colors.WHITE,
-        unselected_label_color=ft.colors.GREY,
-        divider_color=ft.colors.BLACK,
-        indicator_color=ft.colors.GREY,
+        label_color=ft.Colors.WHITE,
+        unselected_label_color=ft.Colors.GREY,
+        divider_color=ft.Colors.BLACK,
+        indicator_color=ft.Colors.GREY,
         scrollable=False,
         tabs=[
             ft.Tab(
-                icon=ft.icons.GRID_ON,
+                icon=ft.Icons.GRID_ON,
                 text='PUBLICAÇÕES',
                 content=grid,
             ),
             ft.Tab(
-                icon=ft.icons.VIDEO_COLLECTION_OUTLINED,
+                icon=ft.Icons.VIDEO_COLLECTION_OUTLINED,
                 text='REELS',
                 content=grid,
             ),
             ft.Tab(
-                icon=ft.icons.BOOKMARK_BORDER,
+                icon=ft.Icons.BOOKMARK_BORDER,
                 text='SALVOS',
                 content=grid,
             ),
@@ -268,7 +268,7 @@ def main_view(page: ft.Page):
                     controls=[
                         header,
                         stories,
-                        ft.Divider(color=ft.colors.GREY),
+                        ft.Divider(color=ft.Colors.GREY),
                         posts,
                     ]
                 )
