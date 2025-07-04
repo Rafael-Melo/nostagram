@@ -30,7 +30,7 @@ def main_view(page: ft.Page):
                     shadow=ft.BoxShadow(blur_radius=10, color=ft.Colors.LIGHT_BLUE),
                     height=200,
                     content=ft.Image(
-                        src='images/Avatar.png',
+                        src='img/Avatar.png',
                     ),
                 ),
                 ft.Container(
@@ -224,7 +224,7 @@ def main_view(page: ft.Page):
                 data=num,
                 on_click=show_image_detail,
                 content=ft.Image(
-                    src=f'images/Nostagram{num}.png',
+                    src=f'img/Nostagram{num}.png',
                     fit=ft.ImageFit.COVER,
                 )
             ) for num in range(12)

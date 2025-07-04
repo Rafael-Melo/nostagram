@@ -27,7 +27,7 @@ def detail_view(page: ft.Page):
                     title=ft.Text(value='Avatar', color=ft.Colors.BLACK, weight=ft.FontWeight.BOLD),
                     subtitle=ft.Text(value=f'{local[img_id]}', color=ft.Colors.BLACK),
                     leading=ft.Image(
-                        src='images/Avatar.png',
+                        src='img/Avatar.png',
                         fit=ft.ImageFit.CONTAIN,
                         border_radius=ft.border_radius.all(30)
                     ),
@@ -38,7 +38,7 @@ def detail_view(page: ft.Page):
                     )
                 ),
                 ft.Image(
-                    src=f'images/Nostagram{img_id}.png',
+                    src=f'img/Nostagram{img_id}.png',
                     fit=ft.ImageFit.FILL,
                 ),
                 ft.Container(

@@ -16,4 +16,4 @@ def app_routes(page: ft.Page):
     page.on_route_change = route_change
     page.go(page.route)
 
-ft.app(target=app_routes, assets_dir="../assets")
+ft.app(target=app_routes, assets_dir="assets")
